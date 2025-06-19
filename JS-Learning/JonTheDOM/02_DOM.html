@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <div>January</div>
-        <div>February</div>
-        <div>March</div>
-        <div>April</div>
+<body style="background-color: #212121; color: #fff;">
+    <div class="months">
+        <div class="days">January</div>
+        <div class="days">February</div>
+        <div class="days">March</div>
+        <div class="days">April</div>
     </div>
 </body>
+
+<script>
+    const parent = document.querySelector('.months');
+    // console.log(data1);
+    // data1.children[1].style.color = 'purple'
+
+    const monthss = document.querySelector('.days');
+    console.log(monthss);
+    console.log(monthss.parentElement);
+    console.log(monthss.nextElementSibling);
+    
+    
+    
+
+</script>
 </html>

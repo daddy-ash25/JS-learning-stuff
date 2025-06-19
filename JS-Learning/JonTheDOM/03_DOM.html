@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="TheList">
+        <li>January</li>
+        <li>february</li>
+        <li>march</li>
+        <li>april</li>
+    </ul>
+</body>
+<script>
+    function AddElement(LangName) {
+        const li = document.createElement('li')
+        // li.innerHTML = `${LangName}`
+        li.appendChild(document.createTextNode(LangName))
+        document.querySelector('.TheList').appendChild(li)
+    }
+    AddElement('may')
+    AddElement('june')
+
+    const removing = document.querySelector('li:nth-child(4)')
+    removing.remove();
+</script>
+</html>
